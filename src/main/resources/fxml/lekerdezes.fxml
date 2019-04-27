@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="410.0" prefWidth="703.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+   <children>
+      <TableView fx:id="table1" layoutX="31.0" layoutY="34.0" prefHeight="337.0" prefWidth="566.0">
+          <columns>
+              <TableColumn fx:id="projektCol" prefWidth="173.0" text="Projekt" />
+              <TableColumn fx:id="sapCol" prefWidth="193.0" text="SAP" />
+              <TableColumn fx:id="mennyCol" minWidth="0.0" prefWidth="154.0" text="Mennyiség" />
+          </columns>
+      </TableView>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="426.0" prefWidth="539.0">
+            <children>
+                <Label layoutX="36.0" layoutY="25.0" text="Projekt:" />
+                <Label layoutX="237.0" layoutY="25.0" text="SAP szám:" />
+            <ComboBox fx:id="projektek" layoutX="36.0" layoutY="56.0" prefWidth="150.0" />
+
+            <TextField fx:id="sap" layoutX="237.0" layoutY="56.0" />
+            <Label fx:id="anyagLabel" layoutX="237.0" layoutY="89.0" text="Label" />
+            <ListView fx:id="anyagok" layoutX="24.0" layoutY="159.0" prefHeight="200.0" prefWidth="200.0" />
+            <TextField fx:id="mennyiseg" layoutX="303.0" layoutY="153.0" />
+            <Label layoutX="277.0" layoutY="125.0" text="Mennyiség:" />
+            <Button fx:id="rogzitBtn" layoutX="416.0" layoutY="201.0" mnemonicParsing="false" onAction="#rogzit" text="Rögzít" />
+            <Button fx:id="lekerdezBtn" layoutX="291.0" layoutY="292.0" mnemonicParsing="false" onAction="#lekerdez" text="Lekérdez" />
+            </children>
+        </Pane>
+    </children>
+</GridPane>
